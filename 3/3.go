@@ -15,11 +15,9 @@ func contains(sl []int, i int) bool {
 
 func (ms MyIntSlice) Unique() MyIntSlice{
 	var unique_ms MyIntSlice
-	var check_sl []int
 
 	for _, v := range ms {
-		if !contains(check_sl, v){
-			check_sl = append(check_sl, v)
+		if !contains(unique_ms, v){
 			unique_ms = append(unique_ms, v)
 		}
 	}
