@@ -1,4 +1,4 @@
-module go-postgres
+module hc_practice/7
 
 go 1.22.3
 
